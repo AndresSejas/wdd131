@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Andres Sejas</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Andres Sejas. This is my personal website for the WDD 131 course.">
+    <meta name="author" content="Andres Sejas">
+   
+    <link rel="stylesheet" href="/styles/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Xmind:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="/scripts/getdates.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+    <nav>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/andres-sejas/">LinkedIn</a></li>
+            <li><a href="https://byupw.instructure.com/">I-Learn</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=spa&id=p7#p7">Scripture</a></li>
+            <li><a href="/finalproject/">Final Project</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <h1>Andres Sejas</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="myself-description">
+            <p>My name is Andres. I was born in Cochabamba, Bolivia and live with my family in La Paz. I am a university student. My favorite food is the Ceviche and fried chicken. I love the technology and hearing rock music</p>
+            <img src="/images/profile.jpg" alt="Andres Sejas picture" width="200">
+            </div>
+            <h3>La Paz, Bolivia</h3>
+            <div class="my-city">
+            <div class="flag-container">
+            <img src="/images/lapazflag.png" alt="Flag of La Paz" width="200">
+            <p><i>Official flag of La Paz</i></p>
+            </div>
+            <p>La Paz is a vibrant city where ancient Indigenous Aymara traditions blend with modern urban life, colorful hillside neighborhoods, and bustling local markets like the famous Witches' Market. Towering high above the streets is the snowy, iconic peak of Mount Illimani, giving the city a breathtaking and unique landscape.</p>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dep Resources</h2>
+            <ul>
+                <li><a href="#">Dev Community</a></li>
+                <li><a href="#">Smashing Magazine</a></li>
+                <li><a href="#">CSS Tricks</a></li>
+                <li><a href="#">W3 Schools</a></li>
+                <li><a href="#">Udemy</a></li>
+                <li><a href="#">Lorem Picsum Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ⛄ Andres Sejas ⛄ Bolivia</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
