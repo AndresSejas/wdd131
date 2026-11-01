@@ -90,6 +90,7 @@ h1 {
     border: 1px solid var(--primary-color);
     border-radius: 6px;
     margin-bottom: 1.5rem;
+    height: 500px;
 }
 
 .card h2 {
@@ -151,7 +152,7 @@ h1 {
 }
 .card ul {
     padding-left: 2.5rem;
-    margin: 50% 0;
+    margin: 35% 0;
 }
 
 .card li {
