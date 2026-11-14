@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Country Page - Andres Sejas</title>
+    <meta name="description" content="WDD 131 - Country Page - Discover La Paz, Bolivia, its geography, culture, and weather details.">
+    <meta name="author" content="Andres Sejas">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>La Paz, Bolivia</h1>
+    </header>
+    
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/la-paz-large.webp">
+                <img src="images/la=paz=small.webp" alt="La Paz and Mount Illimani" width="800" height="500">
+            </picture>
+        </div>
+
+        <section class="card data-card">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 472 km²</li>
+                <li><strong>Population:</strong> 2.8 million</li>
+                <li><strong>Capital:</strong> Nuestra Señora de La Paz</li>
+                <li><strong>Languages:</strong> Spanish, Aymara, Quechua</li>
+                <li><strong>Currency:</strong> Boliviano (BOB)</li>
+                <li><strong>Time Zone:</strong> UTC-4</li>
+                <li><strong>Calling Code:</strong> +591</li>
+                <li><strong>Internet TLD:</strong> .bo</li>
+            </ul>
+        </section>
+
+        <section class="card weather-card">
+            <h2>Weather</h2>
+            <img id="weathericon" src="images/weather-icon.svg" alt="Weather icon" width="150">
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temp">9</span>°C</li>
+                <li><strong>Condition:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> <span id="wind">6</span> km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ⛄ Andres Sejas ⛄ Bolivia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
