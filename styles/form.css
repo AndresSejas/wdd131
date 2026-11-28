@@ -1,0 +1,151 @@
+:root {
+    --primary-color: #473c39;
+    --secondary-color: #a4d4db;
+    --background-color: #f9f9f9;
+    --text-color: #333333;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 500;
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+    color: var(--primary-color);
+}
+
+.req::after{
+    content: "*";
+    color: rgb(216, 3, 3);
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px rgba(164, 212, 219, 0.5);
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+.stars input {
+    display: none; 
+}
+
+.stars label {
+    font-size: 2rem;
+    color: #ccc; 
+    cursor: pointer;
+    margin: 0;
+}
+
+.stars label::before {
+    content: "★";
+}
+
+.stars input:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+    color: #f39c12; 
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: var(--primary-color);
+}
+
+form label:has(input[type="checkbox"]) {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2c2523;
+}
+
+.card-confirmation{
+    text-align: center;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
